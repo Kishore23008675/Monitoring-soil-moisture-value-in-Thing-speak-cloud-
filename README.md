@@ -161,6 +161,8 @@ void loop() {
 # Serial Monitor
 <img width="1861" height="328" alt="image" src="https://github.com/user-attachments/assets/4dd2ca4d-162a-47a9-84d0-f17f183dca64" />
 
+
+# Thingspeak Monitor
 <img width="732" height="726" alt="image" src="https://github.com/user-attachments/assets/ce8a6830-a787-46fd-8896-b66df571d854" />
 
 
