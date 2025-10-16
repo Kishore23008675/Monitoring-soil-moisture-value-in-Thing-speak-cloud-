@@ -1,6 +1,6 @@
 # NAME: Istin B
 # REG NO:212223040068
-# Ex 5 Monitoring soil moisture value in Thing speak cloud
+# Ex-5 Monitoring soil moisture value in Thing speak cloud
 # Uploading soil moisture sensor data in Thing Speak cloud
 
 # AIM:
