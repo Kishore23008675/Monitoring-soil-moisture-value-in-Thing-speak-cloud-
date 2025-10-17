@@ -1,5 +1,5 @@
-# NAME: Istin B
-# REG NO:212223040068
+# NAME: Kishore A
+# REG NO:212223110022
 # Ex-5 Monitoring soil moisture value in Thing speak cloud
 # Uploading soil moisture sensor data in Thing Speak cloud
 
@@ -89,18 +89,16 @@ Prototype and build IoT systems without setting up servers or developing web sof
 ```
 #include "ThingSpeak.h"
 #include <WiFi.h>
-
-// WiFi credentials
-char ssid[] = "poco";         
-char pass[] = "12345678";
-
-// ThingSpeak setup
+#define Soil_Moisture 34
 WiFiClient client;
-unsigned long myChannelNumber = 3119180;   
-const int MoistureField = 1;               
-const char * myWriteAPIKey = "X49Q8FRO1G7N12BM"; 
 
-// Pin configuration
+unsigned long myChannelField = 3121439;
+unsigned long MoistureField=1;
+char ssid[] = "kishore";
+char pass[] = "kishore2005";
+
+const char* myWriteAPIKey = "NEJF5E0D2HAK284Q";
+
 #define soil_pin 34   
 #define led_pin 2    
 
@@ -148,22 +146,22 @@ void loop() {
 
   // Send data to ThingSpeak
   ThingSpeak.setField(MoistureField, moisturePercentage);
-  int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
+  int x = ThingSpeak.writeFields(myChannelField , myWriteAPIKey);
 
   delay(4000);
 }
 
 ```
 # CIRCUIT DIAGRAM:
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/db891c2f-06f5-4b04-a87d-13246e2a3423" />
+![WhatsApp Image 2025-10-17 at 11 39 30_7ebd32dc](https://github.com/user-attachments/assets/25ed8bc5-3577-477d-b1e5-9eaf61f040df)
 
 # OUTPUT:
 # Serial Monitor
-<img width="1861" height="328" alt="image" src="https://github.com/user-attachments/assets/4dd2ca4d-162a-47a9-84d0-f17f183dca64" />
+<img width="1916" height="1018" alt="Screenshot 2025-10-17 113443" src="https://github.com/user-attachments/assets/6b4cb199-161c-46df-9969-25e4dca5ed2d" />
 
 
 # Thingspeak
-<img width="732" height="726" alt="image" src="https://github.com/user-attachments/assets/ce8a6830-a787-46fd-8896-b66df571d854" />
+<img width="1418" height="849" alt="Screenshot 2025-10-17 113514" src="https://github.com/user-attachments/assets/7a4332ca-e161-4348-961b-c637fca5671d" />
 
 
 # RESULT:
